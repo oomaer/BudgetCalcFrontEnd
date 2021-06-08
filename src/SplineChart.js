@@ -36,6 +36,8 @@ class SplineChart extends Component {
         ]
 
 		const options = {
+				responsive: true,
+				maintainAspectRatio: false,
 				animationEnabled: true,	
 				title:{
 					text: "Your Income Vs Budget"

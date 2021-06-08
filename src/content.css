@@ -147,14 +147,14 @@
 .pie-chart, .spline-chart{
     margin: 1rem 5rem;
     margin-top: 4rem;
-    height: 100%;
-    width: 100%;
 }
 
 @media only screen and (max-width: 710px) {
     .pie-chart, .spline-chart{
         margin: 1rem 0rem;
         margin-top: 2rem;
+        height: 100%;
+        width: 100%;
     }  
 }
 

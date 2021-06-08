@@ -166,7 +166,7 @@ class Content extends Component{
         return(
             <div className = 'content-container'>
                 <div className = 'profile-details'>
-                    <img alt = 'profile-photo'src = {this.state.user.imagelink}></img>
+                    <img alt = 'profile=img'src = {this.state.user.imagelink}></img>
                     <label>{this.state.user.name}</label>
                 </div>
                 <div className = 'content-main'>
