@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Nunito:wght@300&display=swap');
+
+.nav{
+    background-color: #1d195b; 
+    width: 22rem;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+}
+
+#nav-menu-btn{
+    position: absolute;
+    top: 2rem;
+    left: 10px;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#nav-menu-btn:hover{
+    transform: scale(1.1);
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 3rem;
+}
+
+.nav-items {
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.nav-items li {
+    flex-grow: 1;
+    font-size: 110%;
+    display: flex;
+    padding: 0.8rem 3rem;
+    cursor: pointer;
+}
+
+.nav-list-item{
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.nav-list-item svg{
+    margin-right: 1rem;
+    height: 17px;
+    width: 17px;
+}
+
+#nav-item-budget{
+    border-left: 4px solid white;
+    background-color: rgba(156, 156, 156, 0.4);
+}
+
+.nav-items li:hover{
+    transform: scale(1.1);
+    background-color: rgba(156, 156, 156, 0.4);
+}
+
+#hide-nav-check{
+    display: none;
+}
+#cross-btn{
+    margin-left: 20rem;
+    font-size: 120%;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#cross-btn:hover{
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 1000px){
+    #nav-menu-btn{
+        display: block;
+    }
+
+    #cross-btn{
+        display: block;
+    }
+    
+    .nav{
+        position: absolute;
+        left: -22rem;
+        transition: all 0.3s ease-in-out;
+        min-height: 200vh;
+    }
+
+    #hide-nav-check:checked ~ .nav{
+        left: 0;
+    }
+
+    #hide-nav-check:checked ~ #nav-menu-btn{
+        display: none;
+    }
+
+}

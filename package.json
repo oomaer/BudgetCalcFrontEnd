@@ -1,5 +1,5 @@
 {
-  "name": "budgetcalc",
+  "name": "budgetfriendlycalculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,0 +1,6 @@
+.mainpage-container{
+    display: flex;
+    background-color: #161c2e;
+    color: white;
+    min-height: 100vh;
+}

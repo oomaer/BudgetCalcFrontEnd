@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.content-container{
+    padding: 3rem;
+    flex-grow: 1;
+}
+
+.content-main, .income-section, .currency-section, .income-sources, .sources-details-container, .income-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+.profile-details{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+.profile-details img{
+    height: 30px;
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
+.module-header{
+    font-family: 'Montserrat', sans-serif;
+    align-self: flex-start;
+
+}
+
+.currency-section select{
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    outline: none;   
+    width: 10rem;
+    margin-top: 1rem;
+    border-radius: 15%; 
+}
+
+.income-section label {
+    margin-bottom: 1rem;
+}
+.income-inputs select{
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    outline: none;   
+    width: 10rem;
+    margin-left: 1rem;
+    border-radius: 15%; 
+}
+.income-inputs input{
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    outline: none;
+}
+#addincomebtn{
+    padding: 0.5rem 2rem;
+    border-radius: 10%;
+    margin-top: 1rem;
+    background-color: #ed500a;
+    color: white;
+    border: 1px solid #ed500a;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+#addincomebtn:hover{
+    border: 1px solid white;
+    background: none;
+    transform: scale(1.1);
+}
+#addincomestatus{
+    color: red;
+}
+.sources-details-container{
+    padding: 2rem;
+    background-color: white;
+    color: black;
+    border-radius: 3%;
+    width: 22.5rem;
+    min-height: 1rem;
+}
+
+.income-card{
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.income-details{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.income-details svg{
+    color: #ed500a;
+    margin-right: 1rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    cursor: pointer;
+}
+.income-details svg:hover{
+    color: black;
+    transform: scale(1.1);
+}
+.incomeamount{
+    margin-right: 5rem;
+    border: none;
+    pointer-events: none;
+    font-size: 105%;
+}
+.checkbtn{
+    display: none;
+}
+#incomeamountedit{
+    display: none;
+}
+#incomeamountedit:checked ~ .checkbtn{
+    display: block;
+}
+#incomeamountedit:checked ~ .editbtn{
+    display: none;
+}
+#incomeamountedit:checked ~ .incomeamount{
+    border: 1px solid black;
+    pointer-events: all;
+}
+
+#incomefrequency{
+    font-size: 80%;
+    color: gray;
+}
+
+.monthly-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pie-chart, .spline-chart{
+    margin: 1rem 5rem;
+    margin-top: 4rem;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 710px) {
+    .pie-chart, .spline-chart{
+        margin: 1rem 0rem;
+        margin-top: 2rem;
+    }  
+}
+
+@media only screen and (max-width: 540px) {
+    .profile-details{
+        right: -8rem;
+    }
+    
+}
