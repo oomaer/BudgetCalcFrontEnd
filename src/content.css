@@ -153,14 +153,41 @@
     .pie-chart, .spline-chart{
         margin: 1rem 0rem;
         margin-top: 2rem;
-        height: 100%;
-        width: 100%;
     }  
 }
 
 @media only screen and (max-width: 540px) {
     .profile-details{
-        right: -8rem;
+        right: 10px;
     }
+    .pie-chart, .spline-chart{
+        margin: 1rem 0rem;
+        margin-top: 2rem;
+        max-width: 400px;
+        height: 100%;
+        width: 100%;
+    }  
     
+}
+
+@media only screen and (max-width: 486px){
+    :root{
+        font-size: 85%;
+    }
+}
+
+@media only screen and (max-width: 412px){
+    .sources-details-container{
+        /* width: 290px; */
+    }
+
+    .content-container{
+        padding: 4rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 346px){
+    :root{
+        font-size: 70%;
+    }
 }
