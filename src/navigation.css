@@ -66,6 +66,11 @@
     margin-right: 1rem;
     height: 17px;
     width: 17px;
+    cursor:pointer;
+}
+
+.nav-list-item label{
+    cursor:pointer;
 }
 
 #nav-item-budget{

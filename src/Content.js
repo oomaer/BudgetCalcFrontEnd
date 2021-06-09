@@ -195,8 +195,8 @@ class Content extends Component{
                     
                     <div className = 'monthly-data'>
                         <label>This Month</label>
-                        <label> Income = {Math.round(this.state.monthly_income * 100) / 100} {this.state.user.currency}</label>
-                        <label> Budget = {Math.round(50000 * 100) / 100} {this.state.user.currency}</label>
+                        <label> Income = {Math.round(this.state.monthly_income * 10000000) / 10000000} {this.state.user.currency}</label>
+                        <label> Budget = 50000 {this.state.user.currency}</label>
                     </div>
                     <div className = 'spline-chart'>
                         <SplineChart />
