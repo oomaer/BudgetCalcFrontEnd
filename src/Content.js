@@ -147,9 +147,7 @@ class Content extends Component{
                     else{
                         response.json().then(result => {
                             let income_arr = this.state.income;
-                            console.log(this.state);
                             income_arr.push({_id: result, amount: this.state.income_input, frequency: this.state.income_frequency})
-                            console.log(this.state);
                             this.setState({addincome_status: '', income: income_arr, income_input: ''});
                             this.calculateMonthyIncome();
                         })
